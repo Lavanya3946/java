@@ -1,0 +1,6 @@
+public class Laptop
+{
+public static void amin(String[] args)
+{
+}
+}
