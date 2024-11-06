@@ -5,7 +5,7 @@
 	String landlineNo;
 	String estDate;
 	
-	Shop1()
+	Shop()
 	{
 		System.out.println("default values:");
 		this.name="null";
@@ -26,20 +26,20 @@
 		 this.ownerName=ownerName;
 	 }
 	 
-	 Shop4(String name,String ownerName,String landlineNo)
+	 Shop(String name,String ownerName,String landlineNo)
 	 {
 		 this(name,ownerName);
 		 this.landlineNo=landlineNo;
 	 }
 	  
-	  Shop5(String name,String ownerName,String landlineNo,String estDate)
+	  Shop(String name,String ownerName,String landlineNo,String estDate)
 	  {
 		  this(name,ownerName,landlineNo);
 		  this.estDate=estDate;
 	  }
 	  
 	  
-	    shopDetails()
+	     public void shopDetails()
 	  {
          System.out.println("Shop name:"+name);
 		 System.out.println("ownerName name:"+ownerName);
@@ -54,12 +54,12 @@
 {
  public static void main(String[] args)
  {
-    Shop shop1=new shop1("Local store","lavu","8902345678","13-09-2022");	
-    Shop shop2=new shop2("Local store","lavu","8902345678","13-09-2022");	 
-    Shop shop3=new shop3("Local store","lavu","8902345678","13-09-2022");	 
-	Shop shop4=new shop4("Local store","lavu","8902345678","13-09-2022");	 
-	Shop shop5=new shop5("Local store","lavu","8902345678","13-09-2022");
-	Shop shop6=new shop6("Local store","lavu","8902345678","13-09-2022");	
+    Shop shop1=new Shop("Local store","lavu","8902345678","13-09-2022");	
+    Shop shop2=new Shop("Local store","lavu","8902345678","13-09-2022");	 
+    Shop shop3=new Shop("Local store","lavu","8902345678","13-09-2022");	 
+	Shop shop4=new Shop("Local store","lavu","8902345678","13-09-2022");	 
+	Shop shop5=new Shop("Local store","lavu","8902345678","13-09-2022");
+	Shop shop6=new Shop("Local store","lavu","8902345678","13-09-2022");	
     
     
 	shop1.shopDetails();
