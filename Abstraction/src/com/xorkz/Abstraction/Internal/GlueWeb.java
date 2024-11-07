@@ -8,6 +8,6 @@ public class GlueWeb extends Web{
 
     @Override
     public void autoConnect() {
-        System.out.println("autoConnect running in Glueweb..");
+        System.out.println("autoConnect running in GlueWeb..");
     }
 }

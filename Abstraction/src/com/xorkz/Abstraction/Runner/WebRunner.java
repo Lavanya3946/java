@@ -5,7 +5,7 @@ import com.xorkz.Abstraction.Internal.Web;
 
 public class WebRunner {
     public static void main(String[] args) {
-        Web web=new GlueWeb("1.0;");
+        Web web=new GlueWeb("1.0");
         web.autoConnect();
         System.out.println(web);
     }
