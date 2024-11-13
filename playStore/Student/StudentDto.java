@@ -1,21 +1,16 @@
 package com.xworkz.playStore.Student;
 
-public class StudentInfo {
+public class StudentDto {
     String name;
     String email;
     int age;
     int weight;
-    int height;
+    double height;
     String address;
 
-    public StudentInfo(String name, String email, int age, int weight, int height, String address) {
-        this.name = name;
-        this.email = email;
-        this.age = age;
-        this.weight = weight;
-        this.height = height;
-        this.address = address;
-    }
+   public void student(){
+
+   }
 
     public String getName() {
         return name;
@@ -49,11 +44,11 @@ public class StudentInfo {
         this.weight = weight;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
@@ -67,7 +62,7 @@ public class StudentInfo {
 
     @Override
     public String toString() {
-        return "StudentInfo{" +
+        return "StudentDto{" +
                 "name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", age=" + age +
@@ -75,14 +70,6 @@ public class StudentInfo {
                 ", height=" + height +
                 ", address='" + address + '\'' +
                 '}';
-    }
-    public  void checkAge(){
-        if(this.age>20){
-            System.out.println("age is greater than 20");
-        }
-        else {
-            System.out.println("age is less than 20");
-        }
     }
 }
 

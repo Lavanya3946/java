@@ -1,18 +1,23 @@
 package com.xworkz.playStore.Book;
 
 public class BookDto {
+    int bookId;
     String name;
     String author;
     int price;
     int year;
     String publisher;
 
-    public BookDto(String name, String author, int price, int year, String publisher) {
-        this.name = name;
-        this.author = author;
-        this.price = price;
-        this.year = year;
-        this.publisher = publisher;
+    public  void book(){
+
+    }
+
+    public int getBookId() {
+        return bookId;
+    }
+
+    public void setBookId(int bookId) {
+        this.bookId = bookId;
     }
 
     public String getName() {
@@ -58,19 +63,13 @@ public class BookDto {
     @Override
     public String toString() {
         return "BookDto{" +
-                "name='" + name + '\'' +
+                "bookId=" + bookId +
+                ", name='" + name + '\'' +
                 ", author='" + author + '\'' +
                 ", price=" + price +
                 ", year=" + year +
                 ", publisher='" + publisher + '\'' +
                 '}';
     }
-    public  void checkPrice(){
-        if(this.price>2000){
-            System.out.println("price is costly..");
-        }
-        else {
-            System.out.println("price is cheaper..");
-        }
-    }
 }
+

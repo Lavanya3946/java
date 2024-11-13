@@ -2,17 +2,74 @@ package com.xworkz.playStore.Application;
 
 public class ApplicationRunner {
     public static void main(String[] args) {
-        ApplicationDto[] applicationDto=new ApplicationDto[5];
-        applicationDto[0]=new ApplicationDto(1,"Instagram","357.0.0.51.100","67MB",4,100,"entertainment");
-        applicationDto[1]=new ApplicationDto(3,"Snapchat","13.15.0.40","3.6MB",5,600,"pictures");
-        applicationDto[2]=new ApplicationDto(39,"Whatsapp","2.24.33.78","3.3Gb",3,200,"chatting");
-        applicationDto[3]=new ApplicationDto(4,"Linkedin","4.1.1003","3.2MB",5,100,"job searching");
-        applicationDto[4]=new ApplicationDto(12,"Zomato","18.6.2","3.4MB",3,60,"food ordering");
 
-        System.out.println("applications:");
-        for (ApplicationDto applicationDto1:applicationDto){
-            System.out.println(applicationDto1);
-            applicationDto1.checkRating();
-        }
+        ApplicationDto applicationDto1=new ApplicationDto();
+        applicationDto1.setName("InstaGram");
+        applicationDto1.setId(1);
+        applicationDto1.setVersion("3.2");
+        applicationDto1.setSize("3.1gb");
+        applicationDto1.setRatings(2);
+        applicationDto1.setFeedbacks("entertainment");
+        applicationDto1.setNoOfDownloads(30);
+
+        ApplicationSaveDetails applicationSaveDetails=new ApplicationSaveDetails();
+        String msg=applicationSaveDetails.applicationDetailsSave(applicationDto1);
+        System.out.println(msg);
+
+        ApplicationDto applicationDto2=new ApplicationDto();
+        applicationDto2.setName("snap");
+        applicationDto2.setId(2);
+        applicationDto2.setVersion("3.2");
+        applicationDto2.setSize("3.1gb");
+        applicationDto2.setRatings(2);
+        applicationDto2.setFeedbacks("entertainment");
+        applicationDto2.setNoOfDownloads(30);
+
+
+        String msg1=applicationSaveDetails.applicationDetailsSave(applicationDto2);
+        System.out.println(msg1);
+
+        ApplicationDto applicationDto3=new ApplicationDto();
+        applicationDto3.setName("LinkedIn");
+        applicationDto3.setId(3);
+        applicationDto3.setVersion("3.2");
+        applicationDto3.setSize("3.1gb");
+        applicationDto3.setRatings(2);
+        applicationDto3.setFeedbacks("jobs");
+        applicationDto3.setNoOfDownloads(30);
+
+        String msg3=applicationSaveDetails.applicationDetailsSave(applicationDto3);
+        System.out.println(msg3);
+
+
+
+        ApplicationDto applicationDto4=new ApplicationDto();
+        applicationDto4.setName("whats app");
+        applicationDto4.setId(4);
+        applicationDto4.setVersion("3.2");
+        applicationDto4.setSize("3.1gb");
+        applicationDto4.setRatings(2);
+        applicationDto4.setFeedbacks("chatting");
+        applicationDto4.setNoOfDownloads(30);
+        String msg4=applicationSaveDetails.applicationDetailsSave(applicationDto4);
+        System.out.println(msg4);
+        applicationSaveDetails.read();
+
+        ApplicationDto applicationDto5=new ApplicationDto();
+        applicationDto5.setName("twitter");
+        applicationDto5.setId(5);
+        applicationDto5.setVersion("3.2");
+        applicationDto5.setSize("3.1gb");
+        applicationDto5.setRatings(2);
+        applicationDto5.setFeedbacks("jobs");
+        applicationDto5.setNoOfDownloads(30);
+
+        String msg5=applicationSaveDetails.applicationDetailsSave(applicationDto5);
+        System.out.println(msg5);
+        applicationSaveDetails.read();
+        System.out.println("_________________");
+        applicationSaveDetails.findApplicationById(2);
+        applicationSaveDetails.findApplicationByName("twitter");
+
     }
 }

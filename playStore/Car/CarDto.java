@@ -9,16 +9,11 @@ public class CarDto {
     private  String color;
     private  double price;
     private  String engineType;
-    private  int mileage;
+    private double mileage;
 
-    public  CarDto(String  make,String model,int year,String color,double price,String engineType,int mileage){
-        this.make=make;
-        this.model=model;
-        this.year=year;
-        this.color=color;
-        this.price=price;
-        this.engineType=engineType;
-        this.mileage=mileage;
+    public  void car()
+    {
+
     }
 
     public String getMake() {
@@ -69,11 +64,11 @@ public class CarDto {
         this.engineType = engineType;
     }
 
-    public int getMileage() {
+    public double getMileage() {
         return mileage;
     }
 
-    public void setMileage(int mileage) {
+    public void setMileage(double  mileage) {
         this.mileage = mileage;
     }
 
@@ -88,13 +83,5 @@ public class CarDto {
                 ", engineType='" + engineType + '\'' +
                 ", mileage=" + mileage +
                 '}';
-    }
-    public  void checkPrice(){
-        if(this.price>20000){
-            System.out.println("price is costly..");
-        }
-        else {
-            System.out.println("price is cheaper..");
-        }
     }
 }

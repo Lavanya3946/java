@@ -10,16 +10,10 @@ public class ApplicationDto {
     private int noOfDownloads;
     private String feedbacks;
 
-    public ApplicationDto(int id, String name, String version, String size, int ratings, int noOfDownloads, String feedbacks) {
-        this.id = id;
-        this.name = name;
-        this.version = version;
-        this.size = size;
-        this.ratings = ratings;
-        this.noOfDownloads = noOfDownloads;
-        this.feedbacks = feedbacks;
-    }
+    public  String applicationDtoSave() {
 
+        return "";
+    }
 
 
     public int getId() {
@@ -90,13 +84,6 @@ public class ApplicationDto {
                 ", feedbacks='" + feedbacks + '\'' +
                 '}';
     }
-    public  void checkRating(){
-        if(this.ratings<4){
-            System.out.println("ratings are good..");
-        }
-        else {
-            System.out.println("rating are poor..");
-        }
-    }
+
 }
 

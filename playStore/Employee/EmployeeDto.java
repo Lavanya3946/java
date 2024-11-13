@@ -7,12 +7,9 @@ public class EmployeeDto {
     int id;
     int noOfExperience;
 
-    public EmployeeDto(String name, String companyName, int salary, int id, int noOfExperience) {
-        this.name = name;
-        this.companyName = companyName;
-        this.salary = salary;
-        this.id = id;
-        this.noOfExperience = noOfExperience;
+    public  void employee()
+    {
+
     }
 
     public String getName() {
@@ -64,13 +61,5 @@ public class EmployeeDto {
                 ", id=" + id +
                 ", noOfExperience=" + noOfExperience +
                 '}';
-    }
-    public  void checkSalary(){
-        if(this.salary>40000){
-            System.out.println("salary is greater than 40 thousand....");
-        }
-        else {
-            System.out.println("salary is less than 40 thousand ..");
-        }
     }
 }
