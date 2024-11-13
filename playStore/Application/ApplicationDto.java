@@ -91,7 +91,7 @@ public class ApplicationDto {
                 '}';
     }
     public  void checkRating(){
-        if(this.ratings<3){
+        if(this.ratings<4){
             System.out.println("ratings are good..");
         }
         else {
