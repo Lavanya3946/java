@@ -1,7 +1,5 @@
 package com.xworkz.exception.dto;
 
-import java.io.Serializable;
-
 public class ZooBookingDTO  {
     private  String customerName;
     private  String email;
