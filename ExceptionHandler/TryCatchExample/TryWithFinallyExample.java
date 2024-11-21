@@ -1,6 +1,6 @@
 package com.xworkz.ExceptionHandler.TryCatchExample;
 
-public class TryWithCatchExample {
+public class TryWithFinallyExample {
     public static void main(String[] args) {
         try{
             int [] numbers={1,2,3};
