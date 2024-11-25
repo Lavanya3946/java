@@ -6,7 +6,7 @@ public class TryWithFinallyExample {
             int [] numbers={1,2,3};
             System.out.println(numbers[3]);
         }finally{
-            System.out.println("finally excutes always");
+            System.out.println("finally executes always");
         }
     }
 }

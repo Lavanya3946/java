@@ -14,7 +14,7 @@ public class MultipleCatchExample {
             System.out.println("Arthamatic error!");
             System.out.println("Exception message:"+e.getMessage());
         } catch (Exception e) {
-            System.out.println("Some exception occured!");
+            System.out.println("Some exception Occured!");
             System.out.println("Exception message:"+e.getMessage());
         }
     }
