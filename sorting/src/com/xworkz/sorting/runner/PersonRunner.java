@@ -19,7 +19,7 @@ public class PersonRunner {
         Address address9 = new Address("Electronic city", 7, "bannaergatta");
         Address address10 = new Address("HSR layout", 8, "BTM layout");
 
-        // Create Person objects with Addresses
+        
         Person person1 = new Person("lavanya", "lavamya@gmail.com", 7760213946L, address1);
         Person person2 = new Person("Sneha", "sneha@gmail.com", 7799665544L, address2);
         Person person3 = new Person("Monika", "monika@gmail.com", 7204315223L, address3);

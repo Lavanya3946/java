@@ -6,7 +6,7 @@ public class Person {
     private long phoneNum;
     private Address address;
 
-    // Constructor with address
+
     public Person(String name, String email, long phoneNum, Address address) {
         this.name = name;
         this.email = email;
@@ -14,12 +14,12 @@ public class Person {
         this.address = address;
     }
 
-    // Existing constructor without address for compatibility
+
     public Person(String name, String email, long phoneNum) {
         this(name, email, phoneNum, null); // Call the new constructor
     }
 
-    // Getters and setters
+
     public String getName() {
         return name;
     }

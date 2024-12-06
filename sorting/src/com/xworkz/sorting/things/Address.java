@@ -11,7 +11,7 @@ public class Address {
         this.area = area;
     }
 
-    // Getters and setters
+
     public String getStreet() {
         return street;
     }
